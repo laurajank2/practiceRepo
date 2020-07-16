@@ -1,4 +1,7 @@
-    // document.getElementById("taskListPage").style.display = "none";
+   //Let's make git work
+   
+   
+   // document.getElementById("taskListPage").style.display = "none";
     // document.getElementById("registerPage").style.display = "none";
     // document.getElementById("logInPage").style.display = "none";
     // document.getElementById("welcomePage").style.display = "none";
