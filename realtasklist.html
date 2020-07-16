@@ -143,10 +143,17 @@
                   </button>
                   
                 </div>
+                <form class="input-group-append" action="/action_page.php">
+                  <select name="priority" id="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                  </select>
+                </form>
               </div>
             </div>
           </div>
-
+          
           <table class="table table-sm table-bordered mt-2">
             <thead class="thead-light">
               <tr>
@@ -156,6 +163,7 @@
             </thead>
             <tbody id="taskList"></tbody>
           </table>
+          <p font = 10px>Don't see your tasks? Try refreshing the page.</p>
         </div>
       </div>
     </div>

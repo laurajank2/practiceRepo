@@ -1,10 +1,9 @@
    //Let's make git work
    
-   
-   // document.getElementById("taskListPage").style.display = "none";
-    // document.getElementById("registerPage").style.display = "none";
-    // document.getElementById("logInPage").style.display = "none";
-    // document.getElementById("welcomePage").style.display = "none";
+   document.getElementById("taskListPage").style.display = "none";
+    document.getElementById("registerPage").style.display = "none";
+    document.getElementById("logInPage").style.display = "none";
+    document.getElementById("welcomePage").style.display = "none";
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -157,11 +156,11 @@ class TaskListPage {
             `;
           taskListElement.appendChild(row);
 
-          } 
-          // if (taskData.priorityId) {
-          //   const priority = this.priorities.find(priority => priority.id == taskData.priorityId);
-          //   task.priority = priority;
-          // }
+          }
+          if (taskData.priorityId) {
+            const priority = this.priorities.find(priority => priority.id == taskData.priorityId);
+            task.priority = priority;
+          }
 
         });
       });
@@ -243,6 +242,7 @@ class TaskListPage {
     taskInput.removeAttribute("data-task-id");
     taskInput.value = "";
     document.getElementById("addBtn").innerText = "Add";
+    
   }
 
   delete(taskId) {
